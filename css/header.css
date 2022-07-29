@@ -1,0 +1,342 @@
+#wrap{
+    position: relative;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    z-index: 100;
+    height: 100%;
+    box-sizing: border-box;
+    transition: width .5s;
+
+    
+}
+header.show{
+    width:900px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    border-radius: 0 50px 50px 0px;
+    box-shadow: 0px 4px 5px 0px #d7d7d7;
+}
+header.show .headerInner{
+    /* border-bottom: 1px solid #eee; */
+}
+
+header.fixed{
+    position: fixed;
+}
+/* 헤더 최상단 */
+header .headerTop {
+    padding: 0 0 70px 0;
+    line-height: 1.5;
+    width: 150px;
+    z-index: 100;
+    text-align: center;
+    order: 3;
+}
+header .headerTop ul{
+
+}
+header .headerTop ul li{
+    display:block;
+    font-size: 14px;
+    list-style: 1.5;
+}
+header .headerTop ul li:first-child:after{
+    content:"";
+}
+header .headerTop ul li a span{
+    vertical-align: middle;
+    margin-left: 5px;
+}
+header .headerTop ul li a span img{
+    width: 14px;
+    height: 14px;
+}
+header .headerInner {
+    display: flex;
+    width: 150px;    
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0px 0px 18px 1px #eee;
+    border-right: 1px solid #eee;
+}
+
+
+header .logo{
+    position: relative;
+    z-index: 100;
+}
+header .logo a img{
+   display: block;
+   width: 105px;
+   margin: 70px auto 0; 
+}
+/* 헤더 gnb */
+header .headerInner .gnb{
+    width: 100%;
+}
+header .headerInner .gnb ul {
+    
+
+}
+header .headerInner .gnb ul li.top{
+    position: relative; 
+    height: 23px;
+    line-height: 23px;
+    padding: 23px 0;
+    transition: all .3 ease;
+    text-align: center;
+}
+header .headerInner .gnb ul li.top a.rox{    
+    font-size:18px;    
+    transition:all .3s ease;
+    position: relative;
+    padding: 10px 0px;
+    font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+}
+
+header .headerInner .gnb ul li.top .sub{
+    position: absolute;
+    top:0;
+    left: 150px;  
+    width: 700px;
+    height: 100%;
+    opacity: 0;
+   
+    visibility: hidden;
+    text-align: left;
+
+}
+header .headerInner .gnb ul li.top .sub li{
+    display: inline-block;
+    
+}
+ header .headerInner .gnb ul li.top .sub.on{
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s .3s;
+} 
+
+header .headerInner .gnb ul li.top .sub a{
+    display: block;
+    margin: 22px 0 0 30px;
+    transition: all .3s ease-in-out;
+    font-size: 15px;
+}
+header .headerInner .gnb ul li.top .sub a.not{
+    margin: 5px 0 0 30px;
+}
+header .headerInner .gnb ul li.top .sub a:hover{
+    color: #e0462e;
+}
+header .headerInner .gnb ul li.top .sub li a{
+    display: block;
+    padding: 0;
+    
+}
+
+/* gnb 호버 메뉴 */
+
+header .headerInner .gnb ul li.top:hover a.rox{    
+    color: #e0462e;
+    
+}
+header .headerInner .gnb ul li.top a.rox::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;    
+    height: 2px;
+    background: #e0462e;
+    transition: all .3s ease;
+}
+
+header .headerInner .gnb ul li.top:hover a.rox::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;    
+    height: 2px;
+    background: #e0462e;
+    transition: all .3s ease;
+    
+}
+header .headerInner .gnb ul li.top:hover::after{
+    content:"";
+    position: absolute;
+    top:40%;
+    right: 30px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background: #e0462e;
+}
+header .headerInner .gnb ul li:nth-child(3).top:hover::after{
+    right: 15px;
+}
+header .headerInner .lan {
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    top: 70px;
+    right: 50px;
+}
+
+header .headerInner .lan > *{
+    float: left;
+}
+/* 헤더 랭귀지 */
+header .headerInner .lan select {
+    background: url("../img/arrow_drop_down_FILL0_wght400_GRAD0_opsz48.svg") center right no-repeat;
+    width: 57px;
+    background-size:25px auto;font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    margin-right: 18px;
+    outline: 0;
+}
+header .headerInner .lan .menu{
+    position: relative;
+}
+header .headerInner .lan .menu a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto 0;
+}
+
+
+
+header .headerInner .lan .menu a.menu_btn.active > span:nth-child(1){
+    transform: rotate(45deg);
+    
+    margin-top: 9px;
+    transition: all .5s;
+}
+
+header .headerInner .lan .menu a.menu_btn.active > span:nth-child(2){
+    opacity: 0;
+}
+header .headerInner .lan .menu a.menu_btn.active > span:nth-child(3){
+    transform: rotate(-45deg);
+    margin-top: -18px;
+    transition: all .5s;
+}
+header .headerInner .lan .menu span{
+    content:"";
+    display:block; 
+    width: 25px;
+    height: 2px;
+    background: #000;
+    transition: all .5s;
+}
+header .headerInner .lan .menu span:nth-child(1){
+    margin-bottom: 7px;
+}
+header .headerInner .lan .menu span:nth-child(2){
+    display: block; margin-bottom: 7px;
+}
+
+/* 헤더 햄버거 메뉴 */
+
+header .drop{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+   
+}
+header .drop.on{
+    opacity: 1;
+    visibility: visible;
+    
+    
+}
+
+header .drop ul.deps01{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+header .drop ul.deps01 > li{
+    border: 1px solid rgba(232,232,232, .8);
+    border-radius: 30px;
+    float: left;
+    width: 20%;
+    margin-right: 15px;
+    height: 400px;
+    transition: all .5s;
+    padding: 35px 15px 0;
+    
+}
+header .drop ul.deps01 > li:last-child{
+    margin-right: 0;
+}
+header .drop ul.deps01 > li a{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+}
+header .drop ul.deps01 > li:hover{
+    box-shadow: 0px 5px 24px 5px #e7e7e7;
+    transform: translateY(-10px);
+    
+
+}
+
+header .drop ul.deps01 > li:hover h2 > a{
+    color: #e0462e;
+    font-weight: 400;
+}
+
+header .drop ul.deps02{
+    margin: 20px 0 0;
+}
+header .drop ul.deps02 > li a{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 0;
+    font-weight: 400;
+    transition: all .5s;
+   
+}
+header .drop ul.deps02 > li a.color_box{
+    color:#888;
+
+}
+
+header .drop ul.deps02 > li a.color_box:hover{
+    color:#888;
+}
+
+header .drop ul.deps02 > li a:hover{
+    color:#e0462e;
+}
+
+header .drop ul.deps02 > li a:hover .material-symbols-outlined{
+    opacity: 1;
+}
+
+header .drop ul.deps02 > li .material-symbols-outlined{
+    float: right;
+    font-size: 16px;
+    opacity: 0;
+    font-weight: 600;
+    color:#e0462e;
+}

@@ -1,0 +1,71 @@
+
+.main_visual{
+    background: url("../img/section01_bg.png")no-repeat;
+    padding:180px 0 180px 150px;
+    background-size: cover;
+    position: relative;
+}
+
+.main_visual .main_content img.main {
+    max-width: 80%;
+    margin:0 auto; 
+    display: block;
+}
+.main_visual .secrchBox{
+    text-align: center;
+    padding:13px 0;    
+    background: #fff;
+    box-shadow: 0 5px 7px 3px #eee;
+    border-radius: 50px;
+    max-width: 55%;
+    margin: 45px auto 15px;
+}
+.main_visual .secrchBox .searchInner{
+    align-items: center;
+    display: flex;
+    margin:0 20px 0 50px;
+}
+.main_visual .main_content img.icon{
+    width: 30px;
+    height: 30px;
+}
+.main_visual .secrchBox input{
+    border:0;
+    background: url("../img/search-outline.svg")no-repeat center left;
+    margin:0 20px 0 0;
+    width: 100%;outline: 0;background-size: 23px auto;
+    padding-left: 30px;
+    height: 30px;
+    letter-spacing: -1.5px;
+}
+.main_visual .secrchBox input::placeholder{
+    font-size: 17px;
+    color:#888;
+    font-weight:500;
+}
+.main_visual .secrchBox .btn{
+    background: #e0462e;
+    border: 0;
+    border-radius: 50px;
+    width: 235px; 
+    height: 55px; 
+    font-size: 15px; 
+    color: #fff;
+}
+
+.main_visual .hash{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main_visual .hash li a{
+    font-family: "Binggrae_nomal";
+    display: block;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    padding: 12px 30px;
+    color: #323232;
+    margin: 10px 5px;
+    font-size: 12px;
+}

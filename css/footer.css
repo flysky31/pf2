@@ -1,0 +1,118 @@
+footer{
+    background: #1b1b1b;
+    color: #d7d7d7;
+    
+   
+}
+footer .footerInner{
+    padding: 50px 50px 50px 200px;
+    overflow: hidden;
+
+}
+footer .logo{
+    float: left;
+    margin-bottom: 20px;
+}
+footer .agree{
+    float: right;
+}
+footer .agree a{
+    color: #888;opacity: 0.7;
+    font-size: 14px;
+}
+
+footer .agree a:first-child{
+    margin-right: 20px;
+}
+footer .logo a img{
+    width: 113px;
+}
+
+footer .footerInner ul{
+    line-height: 2;
+    
+}
+footer .footerInner ul li{
+    opacity: 0.7;
+    
+}
+
+footer .bot{
+    margin-top:130px;
+}
+footer .bot p{
+    color: #888;opacity: 0.5;
+    float: left;
+}
+
+footer .bot .snsBox{
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+footer .bot .snsBox ul{
+    display: flex;
+}
+footer .bot .snsBox ul li{
+    margin: 0 50px 0 0;
+}
+footer .bot .snsBox ul li a{
+    font-size: 0;
+}
+footer .bot .snsBox ul li:nth-child(1) a{
+    background: url("/img/logo-instagram.svg")no-repeat;
+    width: 21px;height: 21px;
+    background-size: 21px auto;
+    display: block;
+}
+footer .bot .snsBox ul li:nth-child(2) a{
+    background: url("/img/logo-youtube.svg")no-repeat center;
+    width: 25px;height: 19px;
+    background-size: 20px auto;
+    display: block;
+}
+footer .bot .snsBox ul li:nth-child(3) a{
+    background: url("/img/logo-twitter.svg")no-repeat center;
+    width: 24px;height: 20px;
+    background-size: 22px auto;
+    display: block;
+}
+footer .bot .snsBox ul li:nth-child(4) a{
+    background: url("/img/footer_sns03.png")no-repeat;
+    width: 37px;height: 20px;
+    background-size: 37px auto;
+    display: block;
+    
+}
+
+footer .bot .snsBox .store_box{
+    margin-left: 50px;
+}
+
+footer .bot .snsBox .store_box img{
+    width: 64px;
+    height: 50px;
+}
+
+footer .bot .snsBox .store_box a{
+    display: flex;
+    align-items: center;
+}
+
+footer .bot .snsBox .store_box span{
+    color: #888;opacity: 0.5;
+    font-size:14px;
+    padding-left:15px;
+}
+
+footer .bot .snsBox .store_box span > strong {
+    color: #fff;
+}
+
+footer .bot .snsBox .store_box span.material-symbols-outlined{
+    font-size: 30px;
+    color: #fff;
+    vertical-align: middle;
+    opacity: 1;
+}
